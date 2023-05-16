@@ -2,10 +2,11 @@ import { type Session } from "next-auth";
 import { SessionProvider } from "next-auth/react";
 import { type AppType } from "next/app";
 
-import { api } from "~/utils/api";
+import { api } from "~/lib/api";
+import { fontSans } from "~/lib/fonts";
+import { cn } from "~/lib/utils";
 
 import "~/styles/globals.css";
-import "~/styles/styles.scss";
 
 const MyApp: AppType<{ session: Session | null }> = ({
   Component,
@@ -13,7 +14,14 @@ const MyApp: AppType<{ session: Session | null }> = ({
 }) => {
   return (
     <SessionProvider session={session}>
-      <Component {...pageProps} />
+      <div
+        className={cn(
+          "flex h-screen min-h-screen flex-col bg-background font-sans antialiased dark:text-white",
+          fontSans.variable
+        )}
+      >
+        <Component {...pageProps} />
+      </div>
     </SessionProvider>
   );
 };

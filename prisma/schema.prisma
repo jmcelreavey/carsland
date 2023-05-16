@@ -2,7 +2,7 @@
 // learn more about it in the docs: https://pris.ly/d/prisma-schema
 
 generator client {
-    provider = "prisma-client-js"
+    provider        = "prisma-client-js"
     previewFeatures = ["jsonProtocol"]
 }
 
@@ -56,6 +56,16 @@ model User {
     image         String?
     accounts      Account[]
     sessions      Session[]
+}
+
+model Car {
+    id        String   @id @default(cuid())
+    make      String
+    model     String
+    year      Int
+    color     String
+    createdAt DateTime @default(now())
+    updatedAt DateTime @updatedAt
 }
 
 model VerificationToken {

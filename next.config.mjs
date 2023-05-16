@@ -18,8 +18,5 @@ const config = {
     locales: ["en"],
     defaultLocale: "en",
   },
-  sassOptions: {
-    includePaths: ["./src/styles/styles.scss", "morse/packages/**/*"],
-  },
 };
 export default config;
