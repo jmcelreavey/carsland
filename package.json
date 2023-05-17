@@ -24,12 +24,13 @@
     "react-dom": "18.2.0",
     "superjson": "1.12.2",
     "zod": "^3.21.4",
-    "morse-css": "^3.1.8",
-    "morse-react": "^3.1.8",
-    "morse-react-dialogs": "^3.1.8",
-    "morse-react-lily-pad": "^3.1.8",
-    "morse-react-tables": "^3.1.8",
-    "morse-react-tabs": "^3.1.8"
+    "morse-css": "^v3.1.8",
+    "morse-react": "v3.1.10-alpha.0",
+    "morse-react-dialogs": "v3.1.10-alpha.2",
+    "morse-react-lily-pad": "v3.1.10-alpha.2",
+    "morse-react-tables": "v3.1.10-alpha.2",
+    "morse-react-tabs": "v3.1.10-alpha.2",
+    "morse-react-uploads": "^3.1.10-alpha.2"
   },
   "devDependencies": {
     "@types/eslint": "^8.21.3",

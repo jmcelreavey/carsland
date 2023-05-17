@@ -4,6 +4,7 @@ import Head from "next/head";
 import Link from "next/link";
 import styles from "./index.module.css";
 
+import { Heading } from "morse-react";
 import { api } from "~/utils/api";
 
 const Home: NextPage = () => {
@@ -18,9 +19,9 @@ const Home: NextPage = () => {
       </Head>
       <main className={styles.main}>
         <div className={styles.container}>
-          <h1 className={"u-pull-right"}>
+          <Heading level={Heading.Level.H1}>
             Create <span className={styles.pinkSpan}>T3</span> App
-          </h1>
+          </Heading>
           <div className={styles.cardRow}>
             <Link
               className={styles.card}
