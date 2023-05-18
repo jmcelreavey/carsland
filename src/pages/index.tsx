@@ -4,7 +4,7 @@ import Head from "next/head";
 import Link from "next/link";
 import styles from "./index.module.css";
 
-import { Heading } from "morse-react";
+import { Button, Heading } from "morse-react";
 import { api } from "~/utils/api";
 
 const Home: NextPage = () => {
@@ -74,12 +74,11 @@ const AuthShowcase: React.FC = () => {
         {sessionData && <span>Logged in as {sessionData.user?.name}</span>}
         {secretMessage && <span> - {secretMessage}</span>}
       </p>
-      <button
-        className={styles.loginButton}
+      <Button
         onClick={sessionData ? () => void signOut() : () => void signIn()}
       >
         {sessionData ? "Sign out" : "Sign in"}
-      </button>
+      </Button>
     </div>
   );
 };

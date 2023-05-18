@@ -1765,35 +1765,35 @@ morse-css@^v3.1.8:
   resolved "https://registry.yarnpkg.com/morse-css/-/morse-css-3.1.8.tgz#670fa70791a2ebc16a972336a781ca63f56e8994"
   integrity sha512-W6qOIJVqwK182znWchzvHEZPjzYQtmgniuPsA/9lokVSSqTJYsXITj2g2gfVGO03r6d2E2lVRTN14bifIpuc4w==
 
-morse-react-dialogs@v3.1.10-alpha.2:
-  version "3.1.10-alpha.2"
-  resolved "https://registry.yarnpkg.com/morse-react-dialogs/-/morse-react-dialogs-3.1.10-alpha.2.tgz#ed876ed788cfbd22e3520aee2e888bf851d8d488"
-  integrity sha512-Nb9SnQee3cCp5LaIXDtoP3km7potmrA8S/kfzPJH/P569FWQwTQQ3sSz4B+qa0ZzCxlIgUx7vmRj6rwEzdjDNA==
+morse-react-dialogs@v3.1.10-alpha.4:
+  version "3.1.10-alpha.4"
+  resolved "https://registry.yarnpkg.com/morse-react-dialogs/-/morse-react-dialogs-3.1.10-alpha.4.tgz#fe79beb84835e761df4a419103bacb35f8f4ab46"
+  integrity sha512-t8rr2egU3xLbkg3ONoXHqhaqLv/s74+vi3aahhBVXHXyCvf7iEkMbVt3L4OVd8ZySA+C3bgCKJpZPaC8+3WiGg==
 
-morse-react-lily-pad@v3.1.10-alpha.2:
-  version "3.1.10-alpha.2"
-  resolved "https://registry.yarnpkg.com/morse-react-lily-pad/-/morse-react-lily-pad-3.1.10-alpha.2.tgz#77429db7fe7a1becfdf8c5364b3d9e3d5783adb8"
-  integrity sha512-sjZJQsUU1qO1A7THnCmnnF9P26IS3LJ7Zwln5fEdY6MO+loW9vv0M9iikWEq0f6uD5zT1FFf7nRIfSTMPSvBLg==
+morse-react-lily-pad@v3.1.10-alpha.4:
+  version "3.1.10-alpha.4"
+  resolved "https://registry.yarnpkg.com/morse-react-lily-pad/-/morse-react-lily-pad-3.1.10-alpha.4.tgz#498666c7cc93f25b217ee509e701f4f7c7ba8adc"
+  integrity sha512-PF10kJ4o7w5fbY5ztpHvOgP9G0z6EKj9OwwqXflwDVnMl1MiHTrd0ns2ZIlAeZxvvjJ9BJmY9X69bDkQOPTlfA==
 
-morse-react-tables@v3.1.10-alpha.2:
-  version "3.1.10-alpha.2"
-  resolved "https://registry.yarnpkg.com/morse-react-tables/-/morse-react-tables-3.1.10-alpha.2.tgz#6e59f497533e9e4f1166ae34958b59477e882e64"
-  integrity sha512-/peIhmGkKU47F2u4Tz5TtwRBeCErIoxv+3o+8eKphTousu3IvXWkB/BKmmgtAYKWQCclYN1GC8U3oyR+1GL7/Q==
+morse-react-tables@v3.1.10-alpha.4:
+  version "3.1.10-alpha.4"
+  resolved "https://registry.yarnpkg.com/morse-react-tables/-/morse-react-tables-3.1.10-alpha.4.tgz#cbcb2d05ce644e303f0c5ffcce7391bafba8d389"
+  integrity sha512-wLG3t192MX91gx2h9rjFBZpNGbzMT0u6HRk1BogfCl8xidqvdTCbCTYNlVVmYpGOhyldI+PKhsMJAFYyAexzTA==
 
-morse-react-tabs@v3.1.10-alpha.2:
-  version "3.1.10-alpha.2"
-  resolved "https://registry.yarnpkg.com/morse-react-tabs/-/morse-react-tabs-3.1.10-alpha.2.tgz#421c05e407c3ec67654598df7f14f232a1498b49"
-  integrity sha512-E5+5DnERM1YO1b9b+ztjuTaln+AZDqu7i/Q7ru3MfDzNZH8cRUPLjoovoRGXCpADcp7NmOsJCdh2ZnQX5VneYw==
+morse-react-tabs@v3.1.10-alpha.4:
+  version "3.1.10-alpha.4"
+  resolved "https://registry.yarnpkg.com/morse-react-tabs/-/morse-react-tabs-3.1.10-alpha.4.tgz#11a4261a8b59325e8276fdd6bf70179fb22b47bc"
+  integrity sha512-opY0Mds1BUyyPxb8XwBD7FIku3WSz1YcZ6fHK8I/K/Qw/ZBeGorjsCtQZhj9JU9XQ3OYtuGS0ujiTxyrohZbLA==
 
-morse-react-uploads@3.1.10-alpha.2:
-  version "3.1.10-alpha.2"
-  resolved "https://registry.yarnpkg.com/morse-react-uploads/-/morse-react-uploads-3.1.10-alpha.2.tgz#e1e908c9a63bd113661197c06323fb75445034ba"
-  integrity sha512-pCeXPTRcfczCuw8FJNmHypOCTnCwZfkFOmO0JGFr4Mv52NlSvYvo1ux4dPLIdeW50PQdv6RvK6/ZvrJodMXJtg==
+morse-react-uploads@3.1.10-alpha.4:
+  version "3.1.10-alpha.4"
+  resolved "https://registry.yarnpkg.com/morse-react-uploads/-/morse-react-uploads-3.1.10-alpha.4.tgz#a555974f9b85b3b85a7624f795d25b4d53a47b16"
+  integrity sha512-KthURavfPSvDNEAb7hYIzxkjiVMueOB/fA3/IVd8W1dJIb7fZKvL5Ji5DISEwmo7jjfH2L9+B6KJDjs2B8XrFg==
 
-morse-react@v3.1.10-alpha.2:
-  version "3.1.10-alpha.2"
-  resolved "https://registry.yarnpkg.com/morse-react/-/morse-react-3.1.10-alpha.2.tgz#fefd229aa1a3182f2361b1f62c8326fa5780302f"
-  integrity sha512-T+uf/y3WjG7hH6zrCGzjl/G78Qw08baY1kCkNwYQTjw86YMR+SHa96FTSx6Igt/TMnIUdDh6LhRkKZJNVssMTQ==
+morse-react@v3.1.10-alpha.4:
+  version "3.1.10-alpha.4"
+  resolved "https://registry.yarnpkg.com/morse-react/-/morse-react-3.1.10-alpha.4.tgz#ded9128b9aad2634a4ff127de78bf0e0e484e99c"
+  integrity sha512-3piXCLx92FV9Ng6ntaLjYD5ayudzLWRhRhW7uRRCyaJ/5D4KJ0ow2Nwy086w/WcZH/L9lHFX+cvFqTf0wIPWmQ==
 
 ms@2.1.2:
   version "2.1.2"
