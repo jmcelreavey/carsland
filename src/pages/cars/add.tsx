@@ -1,4 +1,4 @@
-import { Input, Label } from "morse-react";
+import { Button, Label } from "morse-react";
 import { type NextPage } from "next";
 import { useRouter } from "next/router";
 import { z } from "zod";
@@ -34,17 +34,14 @@ const AddCar: NextPage = () => {
     <div>
       <h2>Add a car</h2>
       <form
-        onSubmit={(event) => {
-          void methods.handleSubmit(async (values) => {
-            await mutation.mutateAsync(values);
-            methods.reset();
-          })(event);
-        }}
-        className="space-y-2"
+        onSubmit={methods.handleSubmit(async (values) => {
+          await mutation.mutateAsync(values);
+          methods.reset();
+        })}
       >
         <div>
           <Label htmlFor="make">Make</Label>
-          <Input id="make" placeholder="Make" {...methods.register("make")} />
+          <input id="make" placeholder="Make" {...methods.register("make")} />
           {methods.formState.errors.make?.message && (
             <p>{methods.formState.errors.make?.message}</p>
           )}
@@ -52,7 +49,7 @@ const AddCar: NextPage = () => {
 
         <div>
           <Label htmlFor="model">Model</Label>
-          <Input
+          <input
             id="model"
             placeholder="Model"
             {...methods.register("model")}
@@ -64,11 +61,11 @@ const AddCar: NextPage = () => {
 
         <div>
           <Label htmlFor="year">Year</Label>
-          <Input
+          <input
             type="number"
             id="year"
             placeholder="Year"
-            {...methods.register("year")}
+            {...methods.register("year", { valueAsNumber: true })}
           />
           {methods.formState.errors.year?.message && (
             <p>{methods.formState.errors.year?.message}</p>
@@ -77,7 +74,7 @@ const AddCar: NextPage = () => {
 
         <div>
           <Label htmlFor="color">Color</Label>
-          <Input
+          <input
             id="color"
             placeholder="Color"
             {...methods.register("color")}
@@ -87,9 +84,9 @@ const AddCar: NextPage = () => {
           )}
         </div>
 
-        <button type="submit" disabled={mutation.isLoading}>
+        <Button type="submit" disabled={mutation.isLoading}>
           {mutation.isLoading ? "Loading" : "Submit"}
-        </button>
+        </Button>
       </form>
     </div>
   );

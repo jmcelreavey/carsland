@@ -62,12 +62,10 @@ const CarsTable = ({
                 </Link>
                 <Button
                   appearance={Button.Appearance.Text}
-                  onClick={
-                    void (async () => {
-                      await deleteCar.mutateAsync(car);
-                      await afterDelete();
-                    })
-                  }
+                  onClick={async () => {
+                    await deleteCar.mutateAsync(car);
+                    await afterDelete();
+                  }}
                 >
                   Delete
                 </Button>
