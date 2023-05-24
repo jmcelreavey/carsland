@@ -3,11 +3,16 @@
   "version": "0.1.0",
   "private": true,
   "scripts": {
-    "build": "next build",
-    "dev": "next dev",
     "postinstall": "prisma generate",
+    "build": "next build",
+    "predev": "yarn start:db && yarn db:push && yarn db:seed",
+    "dev": "next dev",
     "lint": "next lint",
-    "start": "next start"
+    "start": "next start",
+    "start:db": "docker-compose up -d",
+    "db:seed": "NODE_ENV=development  prisma db seed",
+    "db:studio": "prisma studio",
+    "db:push": "prisma db push --accept-data-loss"
   },
   "dependencies": {
     "@hookform/resolvers": "^3.1.0",
@@ -23,17 +28,19 @@
     "@trpc/next": "^10.18.0",
     "@trpc/react-query": "^10.18.0",
     "@trpc/server": "^10.18.0",
-    "class-variance-authority": "^0.6.0",
-    "clsx": "^1.2.1",
-    "lucide-react": "^0.216.0",
+    "morse-css": "^v3.1.8",
+    "morse-react": "v3.1.10-alpha.4",
+    "morse-react-dialogs": "v3.1.10-alpha.4",
+    "morse-react-lily-pad": "v3.1.10-alpha.4",
+    "morse-react-tables": "v3.1.10-alpha.4",
+    "morse-react-tabs": "v3.1.10-alpha.4",
+    "morse-react-uploads": "3.1.10-alpha.4",
     "next": "^13.4.1",
     "next-auth": "^4.21.0",
     "react": "18.2.0",
     "react-dom": "18.2.0",
     "react-hook-form": "^7.43.9",
     "superjson": "1.12.2",
-    "tailwind-merge": "^1.12.0",
-    "tailwindcss-animate": "^1.0.5",
     "zod": "^3.21.4"
   },
   "devDependencies": {
@@ -51,9 +58,9 @@
     "prettier": "^2.8.6",
     "prettier-plugin-tailwindcss": "^0.2.6",
     "prisma": "^4.11.0",
-    "tailwindcss": "^3.3.2",
-    "tsx": "^3.12.7",
-    "typescript": "^5.0.2"
+    "sass": "^1.62.1",
+    "typescript": "^5.0.2",
+    "tsx": "^3.12.7"
   },
   "ct3aMetadata": {
     "initVersion": "7.13.0"
