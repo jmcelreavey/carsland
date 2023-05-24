@@ -1,23 +1,11 @@
+import { fakerEN_GB } from "@faker-js/faker";
 import { prisma } from "~/server/db";
-import { CARS } from "./const";
+import { seedUsersWithRoles } from "./scenarios/seedUsersWithRoles";
 
 const main = async () => {
-  for (const car of CARS) {
-    const uniqueCarId = car.id;
-    await prisma.car.upsert({
-      where: {
-        id: uniqueCarId,
-      },
-      create: {
-        ...car,
-        id: uniqueCarId,
-      },
-      update: {
-        ...car,
-        id: uniqueCarId,
-      },
-    });
-  }
+  fakerEN_GB.seed(0);
+
+  await seedUsersWithRoles();
 };
 
 main()
