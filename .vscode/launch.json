@@ -14,7 +14,7 @@
       "url": "http://localhost:3000"
     },
     {
-      "name": "Next.js: debug full stack",
+      "name": "Next.js: debug full stack (chrome)",
       "type": "node-terminal",
       "request": "launch",
       "command": "npm run dev",
@@ -22,6 +22,17 @@
         "pattern": "started server on .+, url: (https?://.+)",
         "uriFormat": "%s",
         "action": "debugWithChrome"
+      }
+    },
+    {
+      "name": "Next.js: debug full stack (edge)",
+      "type": "node-terminal",
+      "request": "launch",
+      "command": "npm run dev",
+      "serverReadyAction": {
+        "pattern": "started server on .+, url: (https?://.+)",
+        "uriFormat": "%s",
+        "action": "debugWithEdge"
       }
     }
   ]
