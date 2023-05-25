@@ -1,6 +1,6 @@
 import { fakerEN_GB, type Faker } from "@faker-js/faker";
 import { type PrismaClient } from "@prisma/client";
-import { prisma } from "~/server/db";
+import prisma from "~/server/db";
 
 export class Seeder {
   protected static faker: Faker;

@@ -1,17 +1,16 @@
 import { z } from "zod";
-import { addCarSchema } from "~/schema/car";
+import { addCustomerSchema } from "~/schema/customer.schema";
 import { createTRPCRouter, protectedProcedure } from "~/server/api/trpc";
+import { CreateCustomerUseCase } from "~/server/customers/usecase/customer.usecase";
 
-export const carRouter = createTRPCRouter({
+export const customerRouter = createTRPCRouter({
   getAll: protectedProcedure().query(({ ctx }) => {
-    return ctx.prisma.car.findMany();
+    return ctx.prisma.customer.findMany();
   }),
   add: protectedProcedure()
-    .input(addCarSchema)
+    .input(addCustomerSchema)
     .mutation(({ input, ctx }) => {
-      return ctx.prisma.car.create({
-        data: input,
-      });
+      return new CreateCustomerUseCase(ctx.prisma).execute(input);
     }),
   delete: protectedProcedure()
     .input(
@@ -20,7 +19,7 @@ export const carRouter = createTRPCRouter({
       })
     )
     .mutation(({ input, ctx }) => {
-      return ctx.prisma.car.delete({
+      return ctx.prisma.customer.delete({
         where: {
           id: input.id,
         },

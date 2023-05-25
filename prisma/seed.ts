@@ -1,5 +1,5 @@
 import { fakerEN_GB } from "@faker-js/faker";
-import { prisma } from "~/server/db";
+import prisma from "~/server/db";
 import { seedUsersWithRoles } from "./scenarios/seedUsersWithRoles";
 
 const main = async () => {
