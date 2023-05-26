@@ -7,7 +7,7 @@ import { createInnerTRPCContext } from "~/server/api/trpc";
 import prismaMock from "~/server/mocks/db";
 
 // mock prisma module
-vi.mock("../../../db");
+vi.mock("~/server/db");
 
 describe("using the customer router", () => {
   // 3- Reset everything
