@@ -1,6 +1,6 @@
 import { z } from "zod";
 
-export const addCustomerSchema = z.object({
+export const AddCustomerSchema = z.object({
   name: z.string().nonempty("Name is required"),
   addressLine1: z.string().nonempty("First line of address is required"),
   addressLine2: z.string().optional(),
@@ -9,4 +9,4 @@ export const addCustomerSchema = z.object({
   phone: z.string().nonempty("Phone number is required"),
 });
 
-export type addCustomerSchema = z.input<typeof addCustomerSchema>;
+export type AddCustomerSchema = z.input<typeof AddCustomerSchema>;

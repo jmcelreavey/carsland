@@ -5,6 +5,8 @@
   },
   "editor.formatOnSave": true,
   "editor.defaultFormatter": "esbenp.prettier-vscode",
-  "jest.autoRun": "off",
-  "prisma.fileWatcher": true
+  "prisma.fileWatcher": true,
+  "vitest.commandLine": "yarn test --",
+  "testing.automaticallyOpenPeekView": "never",
+  "vitest.enable": true
 }

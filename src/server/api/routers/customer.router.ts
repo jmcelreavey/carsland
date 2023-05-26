@@ -1,16 +1,19 @@
 import { z } from "zod";
-import { addCustomerSchema } from "~/schema/customer.schema";
+import { AddCustomerSchema } from "~/schema/customer.schema";
 import { createTRPCRouter, protectedProcedure } from "~/server/api/trpc";
-import { CreateCustomerUseCase } from "~/server/customers/usecase/customer.usecase";
 
 export const customerRouter = createTRPCRouter({
   getAll: protectedProcedure().query(({ ctx }) => {
     return ctx.prisma.customer.findMany();
   }),
   add: protectedProcedure()
-    .input(addCustomerSchema)
-    .mutation(({ input, ctx }) => {
-      return new CreateCustomerUseCase(ctx.prisma).execute(input);
+    .input(AddCustomerSchema)
+    .mutation(async ({ input, ctx }) => {
+      const customer = await ctx.prisma.customer.create({
+        data: input,
+      });
+
+      return customer;
     }),
   delete: protectedProcedure()
     .input(

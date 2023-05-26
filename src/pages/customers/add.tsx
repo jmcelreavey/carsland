@@ -1,7 +1,7 @@
 import { Button, Label } from "morse-react";
 import { type NextPage } from "next";
 import { useRouter } from "next/router";
-import { addCustomerSchema } from "~/schema/customer";
+import { AddCustomerSchema } from "~/schema/customer";
 import { api } from "~/utils/api";
 import { useZodForm } from "~/utils/useZodForm";
 
@@ -14,7 +14,7 @@ const AddCustomer: NextPage = () => {
   });
 
   const methods = useZodForm({
-    schema: addCustomerSchema,
+    schema: AddCustomerSchema,
     defaultValues: {
       name: "",
       addressLine1: "",
